@@ -25,7 +25,7 @@ namespace detail {
     #endif
     CPPTRACE_FORCE_NO_INLINE
     std::vector<frame_ptr> capture_frames(
-        std::size_t skip,
+        volatile std::size_t skip,
         std::size_t max_depth,
         EXCEPTION_POINTERS* exception_pointers
     ) {
